@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?k2u6h6');
+  src:  url('../fonts/icomoon.eot?k2u6h6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?k2u6h6') format('truetype'),
+    url('../fonts/icomoon.woff?k2u6h6') format('woff'),
+    url('../fonts/icomoon.svg?k2u6h6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-show:before {
+  content: "\46";
+}
+.icon-hide:before {
+  content: "\45";
+}
+.icon-ab-loop:before {
+  content: "\47";
+}
+.icon-exit-full-screen-second:before {
+  content: "\38";
+}
+.icon-full-screen-second:before {
+  content: "\37";
+}
+.icon-google-plus:before {
+  content: "\30";
+}
+.icon-mute:before {
+  content: "\39";
+}
+.icon-saglus-logo:before {
+  content: "\25";
+}
+.icon-setting:before {
+  content: "\24";
+}
+.icon-share:before {
+  content: "\23";
+}
+.icon-volume:before {
+  content: "\21";
+}
+.icon-down:before {
+  content: "\41";
+}
+.icon-up:before {
+  content: "\40";
+}
+.icon-cross:before {
+  content: "\36";
+}
+.icon-download:before {
+  content: "\35";
+}
+.icon-embed:before {
+  content: "\34";
+}
+.icon-facebook:before {
+  content: "\32";
+}
+.icon-linkedin:before {
+  content: "\29";
+}
+.icon-mail:before {
+  content: "\28";
+}
+.icon-pause:before {
+  content: "\27";
+}
+.icon-play:before {
+  content: "\26";
+}
+.icon-twitter:before {
+  content: "\22";
+}

@@ -1,0 +1,194 @@
+/*  DCP All Apps Modal POpup CSS */
+.dcp-app-modal-top{
+	background:#2b2159 url(dcp-modal-bg.png) no-repeat top;
+    background-size: cover;
+	border-radius: 5px 5px 0px 0px;
+}
+.app-modal-radius{border-radius: 8px 8px 5px 5px;}
+.dcp-app-modal-top .app-drop-btn,
+.dcp-app-modal-top .app-drop-btn.active,
+.dcp-app-modal-top .app-drop-btn:hover,
+.dcp-app-modal-top .app-drop-btn:focus{
+    border: 0;
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent !important;
+    color: #b3afbc !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dcp-app-modal-top .dropdown-toggle::after{margin-left: 10px; 
+border-top: .3em solid;
+border-right: .3em solid transparent;
+border-left: .3em solid transparent;}
+.dcp-app-modal-top .dropdown-menu{
+	box-shadow: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-top: 0px;
+	background: #ffffff;
+}
+.dcp-app-modal-top .dropdown-menu .dropdown-item.nav-link{
+	border: 0;
+	color: #34303f;
+	font-size: 16px;
+	padding: 10px 20px;
+	background: #ffffff;
+}
+.dcp-solution-box{text-align: center}
+.dcp-solution-box a{
+	color: #7f7c88;
+	padding:8px 5px;
+	font-size: 25px;
+	background: #413165;
+	border-radius: 5px;
+	border: 1px solid #413165;
+	margin: auto;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	text-decoration: none; 
+}
+
+.dcp-solution-box  p{
+	font-size: 12px;
+	color: #7f7c88;
+	margin-top: 5px;
+	font-weight: 500;
+}
+.dcp-solution-box:hover a,
+.dcp-solution-box.active-link a{
+	border: 1px solid #9a91ad;
+	color: #ffffff;
+}
+.dcp-solution-box.active-link p{color: #ffffff;}
+.dcp-solution-box:hover p{color: #ffffff;}
+
+@media (min-width:768px){
+.dcp-solution-box a{
+	padding: 15px;
+	color: #7f7c88;
+	font-size: 35px;
+}
+.dcp-solution-box  p{
+	margin-top: 10px;
+	font-size: 14px;
+}	
+}
+@media (min-width:992px){
+.dcp-solution-box a{
+	height: 149px;
+	color: #7f7c88;
+	font-size: 42px;
+	padding: 0px;
+	border-radius: 20px;
+}
+.dcp-solution-box  p{
+	font-size: 16px;
+}	
+}
+
+
+
+.dcp-app-modal-scroll{
+    min-height: 280px;
+    max-height: 280px;
+    height: 280px;
+	background: #eff3f6;
+	border-radius: 0px 0px 5px 5px;
+}
+a.dcp-solution-link{
+	font-size: 14px;
+	color: #34303f;
+	border: 1px solid #ced4d8;
+	border-radius: 5px;
+	padding: 9px 20px;
+	text-decoration: none;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	height: 100%;
+}
+a.dcp-solution-link i{
+	color: #7f7c88;
+	font-size: 20px;
+	margin-right: 15px;
+}
+a.dcp-solution-link:hover  {
+	color: #ffffff;
+	background: #39295d;
+	border: 1px solid #39295d;
+}
+a.dcp-solution-link:hover  i{
+	color: #ffffff;
+}	
+.app-custom-carousel .carousel-control-prev{
+	-ms-flex-pack: start!important;
+	justify-content: flex-start!important;
+}
+.app-custom-carousel .carousel-control-next{
+	-ms-flex-pack: end!important;
+	justify-content: flex-end!important;
+}
+.app-custom-carousel .carousel-control-next i,
+.app-custom-carousel .carousel-control-prev  i{
+	border-radius: 50%;
+	background-color: rgba(239, 243, 246, 0.102);
+	width: 35px;
+	height: 35px;
+	font-size: 12px;
+	color: #7f7c88;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+}
+@media (max-width:767px){
+.app-custom-carousel{
+	padding-left: 40px !important;
+	padding-right: 40px!important;
+}
+.app-custom-carousel .mobile-col{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 10px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+.row-nogutters{
+	margin: 0;
+}
+}
+@media(min-width:768px){
+.app-custom-carousel .mobile-col{
+		max-width: 20%;
+} 
+
+.app-custom-carousel{
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.app-custom-carousel .carousel-control-next,
+.app-custom-carousel .carousel-control-prev{
+	opacity: 1;
+	width: auto;
+}
+}

@@ -1,0 +1,33 @@
+.analog-outer-wrap{
+	height: 120px;
+	position: relative;
+	width: 120px;
+}
+#AnalogClock {
+	background-image: url("clockBg.png");
+	height: 120px;
+	position: relative;
+	width: 120px
+}
+#AnalogClock div {
+	position: absolute;
+	left:46%
+}
+#AnalogClock img[src*="second"] {
+	transition: transform 600000s linear 0s;
+}
+#AnalogClock:target img[src*="second"] {
+	transform: rotate(3600000deg);
+}
+#AnalogClock img[src*="minute"] {
+	transition: transform 360000s linear 0s;
+}
+#AnalogClock:target img[src*="minute"] {
+	transform: rotate(36000deg);
+}
+#AnalogClock img[src*="hour"] {
+	transition: transform 216000s linear 0s;
+}
+#AnalogClock:target img[src*="hour"] {
+	transform: rotate(360deg);
+}

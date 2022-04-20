@@ -1,0 +1,995 @@
+
+/*  DCP All Apps Modal POpup CSS */
+.dcp-app-modal-top{
+    background: url(dcp-modal-top-bg.png) no-repeat;
+    background-position: top;
+}
+.dcp-app-slider-bg{
+    background: url(dcp-app-slider-bg.png) no-repeat;
+	padding: 0px 15px 15px 15px;
+}
+@media (min-width:768px){
+.dcp-app-slider-bg{
+	padding: 0px 30px 30px 30px;
+}
+}
+.dcp-app-modal-top .app-drop-btn,
+.dcp-app-modal-top .app-drop-btn.active,
+.dcp-app-modal-top .app-drop-btn:hover,
+.dcp-app-modal-top .app-drop-btn:focus{
+    border: 0;
+    margin: 0;
+    padding: 0px;
+    text-decoration: none;
+    display: inline-block;
+    background: transparent !important;
+    color: #b3afbc !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+.dcp-app-modal-top .dropdown-toggle::after{display:none;}
+.dcp-app-modal-top .dropdown-menu{
+	box-shadow: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 14px;
+	margin-top: 0px;
+	background: #ffffff;
+}
+.dcp-app-modal-top .dropdown-menu .dropdown-item.nav-link{
+	border: 0;
+	color: #34303f;
+	font-size: 16px;
+	padding: 10px 20px;
+	background: #ffffff;
+}
+@media (min-width: 768px){
+.dcp-app-modal-top .nav-tabs .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+}
+.dcp-solution-box{text-align: center}
+.dcp-solution-box a{
+	width: 140px;
+	height: 140px;
+	color: #7f7c88;
+	font-size: 42px;
+	background: #413165;
+	border-radius: 20px;
+	border: 1px solid #413165;
+	margin: auto;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	text-decoration: none; 
+}
+.dcp-solution-box  p{
+	font-size: 16px;
+	color: #7f7c88;
+	margin-top: 10px;
+	font-weight: 500;
+}
+.dcp-solution-box:hover  a{
+	border: 1px solid #9a91ad;
+	color: #ffffff;
+}
+.dcp-solution-box:hover  p{color: #ffffff;}
+.dcp-app-modal-scroll{
+    min-height: 240px;
+    max-height: 200px;
+    height: 240px;
+}
+a.dcp-solution-link{
+	font-size: 14px;
+	color: #34303f;
+	border: 1px solid #ced4d8;
+	border-radius: 5px;
+	height: 40px;
+	padding: 9px 20px;
+	text-decoration: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+}
+a.dcp-solution-link i{
+	color: #7f7c88;
+	font-size: 20px;
+	margin-right: 15px;
+}
+a.dcp-solution-link:hover  {
+	color: #ffffff;
+	background: #39295d;
+	border: 1px solid #39295d;
+}
+a.dcp-solution-link:hover  i{
+	color: #ffffff;
+}	
+.app-carousel .carousel-control-prev{
+	-ms-flex-pack: start!important;
+	justify-content: flex-start!important;
+}
+.app-carousel .carousel-control-next{
+	-ms-flex-pack: end!important;
+	justify-content: flex-end!important;
+}
+.app-carousel .carousel-control-next i,
+.app-carousel .carousel-control-prev  i{
+	border-radius: 50%;
+	background-color: rgba(239, 243, 246, 0.102);
+	width: 35px;
+	height: 35px;
+	font-size: 12px;
+	color: #7f7c88;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+}
+.app-carousel .carousel-control-next,
+.app-carousel .carousel-control-prev{
+	opacity: 1;
+	width: auto;
+}
+@media (min-width: 768px) and (max-width:991px){
+.app-carousel .carousel-item{
+	width:25% !important;
+	padding: 0px 15px;
+}
+    /* show 3 items */
+    .app-carousel .carousel-inner .active,
+    .app-carousel .carousel-inner .active + .carousel-item,
+    .app-carousel .carousel-inner .active + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+        display: block;
+    }
+    
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .app-carousel .carousel-inner .carousel-item-next,
+    .app-carousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    .app-carousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .app-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .app-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .app-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+	
+}
+@media (min-width: 992px) {
+	.app-carousel .carousel-item{
+		width:20% !important;
+		padding: 0px 15px;
+	}
+    /* show 3 items */
+    .app-carousel .carousel-inner .active,
+    .app-carousel .carousel-inner .active + .carousel-item,
+    .app-carousel .carousel-inner .active + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item+ .carousel-item  {
+        display: block;
+    }
+    
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item+ .carousel-item {
+        transition: none;
+    }
+    
+    .app-carousel .carousel-inner .carousel-item-next,
+    .app-carousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    
+   .app-carousel .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -20%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .app-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item{
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be abso position for animations */
+    .app-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .app-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item,
+    .app-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item{
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+		
+}
+
+
+
+<!-- App Modal Popup -->
+<div class="modal" id="DCPAppModalPopup">
+	<div class="modal-dialog modal-dialog-centered dcp-apps-modal-size">
+		<div class="modal-content app-modal-radius">
+			<div class="modal-body smart-form p0">
+				<div class="dcp-app-modal-top p15 p-md30">
+					<div class="d-flex">
+						<span class="f-18 gblue-clr w500 mr10">Solution:</span>
+						<ul class="nav nav-tabs border-0">
+							<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle app-drop-btn f-18 w500" data-toggle="dropdown"
+								href="#!" role="button" aria-haspopup="true" aria-expanded="false">DCP Lead</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item nav-link" id="dcpmail-tab" data-toggle="tab" href="#dcpmail" role="tab" aria-controls="dcpmail" aria-selected="true">DCP Lead</a>
+									<a class="dropdown-item nav-link" data-toggle="tab" href="#dcpvideo" role="tab" aria-controls="dcpvideo" aria-selected="false">DCP Video</a> 
+								</div>
+							</li>
+						</ul>
+						<a href="javascript:void(0);" data-dismiss="modal" class="d-gblue-clr t-decoration-none f-12 align-self-center ml-auto"><i class="icon-cross"></i></a>
+					</div>
+					<div class="mt15 mt-md30">
+						<div id="app-carousel" class="app-carousel carousel slide app-carousel" data-ride="carousel" data-interval="90000">
+								<div class="container pl-lg60 pr-lg60">
+								<div class="carousel-inner row w-100 mx-auto nav nav-tabs border-bottom-0" role="tablist">
+									<!-- First Carousel Start -->
+									<div class="carousel-item dcp-solution-box active active-link" id="dcp-mail">
+										<a href="#"><i class="icon-dcp-mail"></i></a>
+										<p>Mail</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-page">
+										<a href="#"><i class="icon-dcp-page"></i></a>
+										<p>Page</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-notification">
+										<a href="#"><i class="icon-DCP-Icons"></i></a>
+										<p>Notification</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-video">
+										<a href="#"><i class="icon-dcp-video"></i></a>
+										<p>Video</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-account">
+										<a href="#"><i class="icon-dcp-account"></i></a>
+										<p>Account</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-library">
+										<a href="#"><i class="icon-dcp-library"></i></a>
+										<p>MyDrive</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-integration">
+										<a href="#"><i class="icon-dcp-integration"></i></a>
+										<p>Integration</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-analytics">
+										<a href="#"><i class="icon-dcp-analytics"></i></a>
+										<p>Analytics</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-segments">
+										<a href="#"><i class="icon-dcp-segment"></i></a>
+										<p>Segment</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-blog">
+										<a href="#"><i class="icon-dcp-blog"></i></a>
+										<p>Blog</p>
+									</div>
+									
+									
+									<!-- Second Carousel Start -->
+									<!--<div class="carousel-item dcp-solution-box active" id="dcp-Video1">
+										<a href="#"><i class="icon-dcp-video"></i></a>
+										<p>Video</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-account1">
+										<a href="#"><i class="icon-dcp-account"></i></a>
+										<p>Account</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-library1">
+										<a href="#"><i class="icon-dcp-library"></i></a>
+										<p>MyDrive</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-integration1">
+										<a href="#"><i class="icon-dcp-integration"></i></a>
+										<p>Integration</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-analytics1">
+										<a href="#"><i class="icon-dcp-analytics"></i></a>
+										<p>Analytics</p>
+									</div>
+									<div class="carousel-item dcp-solution-box" id="dcp-segments1">
+										<a href="#"><i class="icon-dcp-segment"></i></a>
+										<p>Segment</p>
+									</div>-->
+								</div>
+								<a class="carousel-control-prev" href="#app-carousel" role="button" data-slide="prev">
+									<i class="icon-previous-a" aria-hidden="true"></i>
+								</a>
+								<a class="carousel-control-next" href="#app-carousel" role="button" data-slide="next">
+									<i class="icon-next-b" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>	
+				</div>	
+				<div class="tab-content">
+					<div class="tab-pane fade show active" id="dcpmail">
+						<!-- Tab Content Start -->
+						<div class="mCustomScrollbar dcp-app-modal-scroll pb15 pb-md30" data-mcs-theme="inset-3">
+							<div class="px-md30 px15">
+								<div class="row">
+									<div class="col-12">
+										<!-- DCP Mail Listing --->
+										<div class="d-block areashow dcp-mail"  role="tabpanel" aria-labelledby="dcp-mail">
+												<div class="row">
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-contactts"></i> Contact
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-add-score-rule"></i> Score Rule
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-tagss"></i> Tag
+														</a>
+													</div>
+
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-add-new-custom-field"></i> Custom Field
+														</a>
+													</div>
+
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-add-to-list"></i> list
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-quick-mailing-group"></i> Quick Mailing Group
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-suppression-list"></i> Suppression List
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-add-new-broadcast"></i> Broadcast
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-ab-testing"></i> AB Test
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-mail-analytics"></i> Mail Analytics
+														</a>
+													</div>
+												</div>
+											</div>
+										<!-- DCP Page Listing --->
+										<div class="d-none areashow dcp-page" role="tabpanel" aria-labelledby="dcp-video-tab">
+												<div class="row">
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-project-update"></i> Projects
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-total-visited-pages"></i> Campaign
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-ab-testing"></i> AB Test
+														</a>
+													</div>
+													<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+														<a href="#" class="dcp-solution-link">
+														 <i class="icon-page-analytics"></i> Page Analytics
+														</a>
+													</div>
+												</div>
+											</div>
+										<!-- DCP Notification Listing --->
+										<div class="d-none areashow dcp-notification" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-project-update"></i> Projects
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-web-notification"></i> Web Notification
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-web-form d-gblue-clr"></i> Web Form
+
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													<i class="icon-ab-testing"></i> AB Test
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-notification-analytics"></i> Notification Analytics
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Video Listing --->
+										<div class="d-none areashow dcp-video" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-project-update"></i> Projects
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-video-video"></i> Video
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													<i class="icon-commentt"></i> Comments
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-upload"></i> Upload Video
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-video-analytics"></i> Video Analytics
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Account Listing --->
+										<div class="d-none areashow dcp-account" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-all-accounts"></i> All Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-add-new-custom-field"></i> Custom Fields
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-all-accounts"></i> Add New Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-import-contacts"></i> Import Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-import-contactt"></i> Recently Added Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													<i class="icon-update-log "></i> Recently Updated Account
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP MyDrive Listing --->
+										<div class="d-none areashow dcp-library" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-all-files"></i> All Files
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-folder"></i> Folders
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-image"></i> Images
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-doc"></i> Documents
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-total-viewed-videos"></i> Videos
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+														<i class="icon-audios"></i> Audios
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+														<i class="icon-others"></i> Others
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													<i class="icon-file-upload"></i> Upload
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-create-new-folder"></i> Create New Folder
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Integration Listing --->
+										<div class="d-none areashow dcp-integration" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-autoresponder"></i> Autoresponder
+
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-crm"></i> Customer Relationship Management 
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-webinar"></i> Webinar
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Analytics Listing --->
+										<div class="d-none areashow dcp-analytics" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-web-analytics"></i> Web Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-segment-analytics"></i> Segment Analytics 
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-mail-analytics"></i> Mail Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-page-analytics"></i> Page Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-notification-analytics"></i> Notification Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-video-analytics"></i> Video Analytics
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Segment Listing --->
+										<div class="d-none areashow dcp-segments" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-total-segment"></i> All Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-segment-analytics"></i> Segment Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-add-new-segment"></i> Add New Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-present-in-segment"></i> Recently Added Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-recently-updated-segment"></i> Recently Updated Segment
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Blog Listing --->
+										<div class="d-none areashow dcp-blog" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-home"></i> Dashboard
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-post"></i> Posts
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-category"></i> Categories
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-tagss"></i> Tags
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-commentt"></i> Comments
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-from-library"></i> Media Library
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-xml"></i> XML Sitemap
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-redirect-link"></i> 301 Redirection 
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="tab-pane" id="dcpvideo">
+						<div class="mCustomScrollbar dcp-app-modal-scroll pb15 pb-md30" data-mcs-theme="inset-3">
+							<div class="px-md30 px15">
+								<div class="row">
+									<div class="col-12">
+										<!-- DCP Video Listing --->
+										<div class="d-block areashow dcp-Video1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-project-update"></i> Projects
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-video-video"></i> Video
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-upload"></i> Upload Video
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-video-analytics"></i> Video Analytics
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP  Account Listing --->
+										<div class="d-none areashow dcp-account1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-all-accounts"></i> All Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-add-new-custom-field"></i> Custom Fields
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-all-accounts"></i> Add New Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-import-contacts"></i> Import Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-import-contactt"></i> Recently Added Account
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-update-log"></i> Recently Updated Account
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP MyDrive Listing --->
+										<div class="d-none areashow dcp-library1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-all-files"></i> All Files
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													   <i class="icon-folder"></i> Folders
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-image"></i> Images
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-doc"></i> Documents
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-total-viewed-videos"></i> Videos
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+														<i class="icon-audios"></i> Audios
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+														<i class="icon-others"></i> Others
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													<i class="icon-file-upload"></i> Upload
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-create-new-folder"></i> Create New Folder
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Integration Listing --->
+										<div class="d-none areashow dcp-integration1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-autoresponder"></i> Autoresponder
+
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-crm"></i> Customer Relationship Management 
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-webinar"></i> Webinar
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Analytics Listing --->
+										<div class="d-none areashow dcp-analytics1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-web-analytics"></i> Web Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-segment-analytics"></i> Segment Analytics 
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-mail-analytics"></i> Mail Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-page-analytics"></i> Page Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-notification-analytics"></i> Notification Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-video-analytics"></i> Video Analytics
+													</a>
+												</div>
+											</div>
+										</div>
+										<!-- DCP Segment Listing --->
+										<div class="d-none areashow dcp-segments1" role="tabpanel" aria-labelledby="dcp-video-tab">
+											<div class="row">
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-total-segment"></i> All Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-segment-analytics"></i> Segment Analytics
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													 <i class="icon-add-new-segment"></i> Add New Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-present-in-segment"></i> Recently Added Segment
+													</a>
+												</div>
+												<div class="col-12 col-md-4 col-lg-3 mt-md30 mt15">
+													<a href="#" class="dcp-solution-link">
+													  <i class="icon-recently-updated-segment"></i> Recently Updated Segment
+													</a>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>					
+			</div>					
+		</div>			 
+	</div>
+</div>
+@media (min-width: 992px){
+.sticky-navbar .smart-nav-area {
+    animation:smoothScroll 0.7s; 
+} 
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-100%);
+    } 
+    100% {
+        transform: translateY(0);
+    } 
+}
+}

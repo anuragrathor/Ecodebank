@@ -1,0 +1,286 @@
+/* Smart Login Header css*/
+.s-login-header{
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(206, 212, 216, 0.9);
+	z-index: 3;
+	height: 50px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.new-login-header{
+	background-color: #ffffff;
+	box-shadow: 0px 0px 8px 0px rgba(206, 212, 216, 0.9);
+	z-index: 3;
+	height: auto;
+	padding: 15px;
+}
+/* Login With us Social */
+.login-with-us{position: relative; margin-top: -19px;}
+.login-header-border{
+    background: #ced4d8;
+    width: 1px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+.login-text-clr{color: #151122;}
+/* Testimonail Slider Design css */
+.testmonial-bg{background: #eff3f6; border: solid 1px #d6dce2; border-radius: 5px; padding: 45px 10px 10px 10px; position: relative; margin-top: -35px;min-height: 138px;}
+.testmonial-bg::before{
+	content: "\a104";
+	font-family: 'icomoon' !important;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #ced4d8;
+	font-size: 22px;
+}
+.testmonial-bg::after{
+	content: "\a200";
+	font-family: 'icomoon' !important;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #ced4d8;
+	font-size: 22px;
+}
+.testimonial-pic{width: 70px; height: 70px; max-height: 70px; max-width: 70px; min-height: 70px; min-width: 70px; border-radius: 50%; padding: 5px; border: solid 1px #ced4d8; background: #ffffff; z-index: 1;
+position: relative;}
+
+/* Carousel Indicator css */
+.smart-indicator.carousel-indicators{position: relative; bottom: 0px; margin-top: 10px; -webkit-box-pack: end !important;
+-ms-flex-pack: end !important;
+justify-content: flex-end !important;
+padding-left: 0;
+margin-right: 0%;
+margin-left: 0%;}
+.smart-indicator.carousel-indicators li{background: #ced4d8; height: 5px; cursor: pointer; width: 19px;}
+.smart-indicator.carousel-indicators .active{background: #39295d;}
+
+/* Features Lisiting */
+ul.feature-listing{margin: 0; padding: 0; position: relative;}
+ul.feature-listing li{list-style: none; margin-bottom: 15px; }
+ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Features Lisiting for password conbination */
+.password-cases ul.feature-listing li{list-style: none; margin-bottom: 12px;}
+.password-cases ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Password Tootltip Design */
+.password-tooltip {background: #34303f; padding: 20px; border-radius: 5px; position: absolute; top: 100; left: 0%; z-index: 9; margin-top: 10px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	left: 15px;
+	top: -13px;
+	width: 0;
+	height: 0;
+	border-bottom: 7px solid #34303f;
+	border-top: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+@media (min-width:768px){
+.password-tooltip {left: 103%; top: 0; margin-top: 0px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	right: 100%;
+	top: 16px;
+	left: -13px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #34303f;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+.new-login-header{
+	height: 80px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+/* Login Border Sepration */
+.login-sep-border{border-left: dashed 1px #ced4d8;}
+}
+
+.password-tooltip ul.feature-listing li{list-style: none; margin-bottom: 16px; white-space: nowrap; }
+.password-tooltip ul.feature-listing li:last-child{margin-bottom: 0px;}
+.white-check-arrow{background: #ffffff; border-radius: 50%; display: inline-block}
+
+
+/* Business Login Css */
+.business-login-bg{background: url(../../../images/business-login-bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+.business-lwhitbg{background: #ffffff; border-radius: 5px; padding: 15px; height: auto;}
+@media (min-width:768px){
+	.business-lwhitbg{
+		padding: 30px 50px; 
+		width: 480px; 
+	}
+}
+.business-container-center{height: 100vh; display: flex; align-items: center;}
+/* Country Dropdown Css */
+.conutry-label .flagstrap .dropdown-menu,.add-account-section .flagstrap .dropdown-menu{
+	transform: translate3d(0px, 39px, 0px)!important;
+	width:100%;
+}
+.flagstrap-h50 .flagstrap .dropdown-menu{
+	transform: translate3d(0px, 49px, 0px)!important;
+	width:100%;
+}
+.conutry-label .flagstrap .btn:not(:disabled):not(.disabled),.add-account-section .flagstrap .btn:not(:disabled):not(.disabled) {
+    background-color: #fff;
+	border: 1px solid #ced4d8;
+	height:50px;
+	width:100%;
+	text-align: left;
+	font-size: 14px;
+	padding-left: 6px;
+}
+.flagstrap-h50 .flagstrap .btn:not(:disabled):not(.disabled){
+    background-color: #fff;
+	border: 1px solid #ced4d8;
+	height:50px;
+	width:100%;
+	text-align: left;
+	font-size: 14px;
+	padding-left: 20px;
+}
+.flagstrap-h50 .flagstrap .btn:disabled,
+.flagstrap-h50 .flagstrap .btn:focus{
+    background-color: #eff3f6;
+	border: 0;
+	height:50px;
+	width:100%;
+	text-align: left;
+	font-size: 14px;
+	padding-left: 6px;
+	opacity:1;
+	box-shadow: none;
+}
+.conutry-label-secondary .flagstrap .btn:not(:disabled):not(.disabled) {
+	padding-left: 20px;
+}
+.conutry-label .flagstrap .dropdown-toggle::after,.add-account-section .flagstrap .dropdown-toggle::after{
+	position: absolute;
+    right: 24px;
+	vertical-align: .12em;
+    border-top: .35em solid;
+    border-right: .35em solid transparent;
+    border-bottom: 0;
+    border-left: .35em solid transparent;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+	top: 16px;
+}
+.flagstrap-h50 .flagstrap .dropdown-toggle::after{
+	position: absolute;
+    right: 24px;
+	vertical-align: .12em;
+    border-top: .40em solid;
+    border-right: .40em solid transparent;
+    border-bottom: 0;
+    border-left: .40em solid transparent;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+	top: 21px;
+}
+
+.flagstrap-h50 .flagstrap.show .dropdown-toggle::after{
+transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-moz-transition: all .5s ease;
+-webkit-transition: all .5s ease;
+-o-transition: all .5s ease;
+transition: all .5s ease;
+}
+
+.flagstrap-h50 .flagstrap .btn:disabled::after{
+	border:0;
+}
+.conutry-label-secondary .btn:not(:disabled):not(.disabled) {
+	border: 1px solid transparent!important;
+}
+.conutry-label .flagstrap a,.add-account-section .flagstrap a,.flagstrap-h50 .flagstrap a{
+	padding:11px 20px;
+	display:block;
+	cursor:pointer;
+	color:#7f7c88;
+}
+.conutry-label .flagstrap a:hover,.add-account-section .flagstrap a:hover,.flagstrap-h50 .flagstrap a:hover{
+	color:#34303f;
+}
+
+/* signup page checkbox label CSS  */
+.signup-checkbox-btn label p{    
+  line-height: 160%;
+  font-size: 12px;
+}
+.signup-checkbox-btn label::before ,
+.signup-checkbox-btn label::after { top: 2px;}
+.signup-checkbox-btn input[type="checkbox"]:checked + label::before {
+    background-color: #5c6ac4;
+    border-color: #5c6ac4;
+}
+@media (max-width: 768px){
+.text-md-hidden{display: none;}
+}
+@media (max-width: 576px){
+.text-sm-hidden{display: none;}
+}
+/* Manually Container width */
+@media (min-width:1200px){
+.container-1170{max-width: 1170px;}
+} 
+
+/*  New Testimonail  CSS */
+.testimonials-description{
+	position: relative;
+	z-index: 9;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 130%;
+}
+.testimonials-description:before{
+	content: '';
+	background: url(../images/blockquote.png) no-repeat left top;
+	position: absolute;
+	z-index: -1;
+	width: 92px;
+	height: 60px;
+	top: -20px;
+	left: 0px;
+}
+.login-testimonials{color: #151122;}
+.login-testimonials .sepration {
+    display: inline-block;
+	margin: 1px 0;
+}
+.testimonials-name{font-size: 14px;font-weight: 500;}
+.testimonial-control a.control{
+	color: #7f7c88;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.testimonial-control a.control:hover{
+	color: #5c6ac4;
+}
+.dotcompal-testimonials .carousel-item{
+    min-height: 175px;
+    margin-bottom: 10px;
+}

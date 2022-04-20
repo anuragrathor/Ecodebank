@@ -1,0 +1,340 @@
+a.login-btn, 
+.login-btn, 
+a.login-btn:focus, 
+.login-btn:focus{
+		font-size: 17px !important;
+		padding: 10px 20px !important;
+}
+/* signup page checkbox label CSS  */
+.signup-checkbox-btn label p{    
+  line-height: 160%;
+  font-size: 13px;
+  font-weight:400;
+  color:#7f7c88;
+}
+.signup-checkbox-btn label::before ,
+.signup-checkbox-btn label::after { top: 2px;}
+.signup-checkbox-btn input[type="checkbox"]:checked + label::before {
+    background-color: #5c6ac4;
+    border-color: #5c6ac4;
+}
+.login-checkbox-btn input[type="checkbox"]:checked + label::before {
+    background-color: #5c6ac4;
+    border-color: #5c6ac4;
+}
+@media(min-width: 768px){
+	a.login-btn, 
+	.login-btn, 
+	a.login-btn:focus, 
+	.login-btn:focus{
+		font-size: 16px !important;
+		padding: 15px 20px !important;
+	}
+}
+/* Features Lisiting */
+ul.feature-listing{margin: 0; padding: 0; position: relative;}
+ul.feature-listing li{list-style: none; margin-bottom: 15px; }
+ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Features Lisiting for password conbination */
+.password-cases ul.feature-listing li{list-style: none; margin-bottom: 12px;}
+.password-cases ul.feature-listing li:last-child{margin-bottom: 0px;}
+
+/* Password Tootltip Design */
+.password-tooltip {background: #34303f; padding: 20px; border-radius: 5px; position: absolute; top: 100; left: 0%; z-index: 9; margin-top: 10px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	left: 15px;
+	top: -13px;
+	width: 0;
+	height: 0;
+	border-bottom: 7px solid #34303f;
+	border-top: 7px solid transparent;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+@media (min-width:768px){
+.password-tooltip {left: 103%; top: 0; margin-top: 0px;}
+.password-tooltip::before{
+	content: '';
+	display: block;  
+	position: absolute;
+	right: 100%;
+	top: 16px;
+	left: -13px;
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-right: 7px solid #34303f;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+}
+
+.password-tooltip ul.feature-listing li{list-style: none; margin-bottom: 16px; white-space: nowrap; }
+.password-tooltip ul.feature-listing li:last-child{margin-bottom: 0px;}
+.white-check-arrow{background: #ffffff; border-radius: 50%; display: inline-block}
+
+.field-white-bg
+{
+	position:relative;
+	background-color:#ffffff;
+}
+/* New Login page */
+.coloum-white-bg{
+	background:#ffffff;
+}
+a.video-poster-play{
+    position: relative;
+    text-align: center;
+    display: block;
+	border:solid 1px #ced4d8;
+}
+a.video-poster-play .poster-width{width:100%; max-height:180px;}
+a.video-poster-play .hover-items{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 9;
+	display: flex;
+	justify-content: center;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+}
+a.video-poster-play .hover-items .play-icon{
+	width:61px;
+	height:41px;
+	border-radius:5px;
+	background:rgba(0,0,0,0.5);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#ffffff;
+	font-size:17px;
+}
+.login-left-wrapper .container-padding{
+	padding:60px 30px;
+	position:relative;
+	width:100%;
+}
+.login-left-wrapper1 .container-padding{
+	padding:60px 30px;
+	position:relative;
+	width:100%;
+}
+
+.login-right-wrapper .container-padding{
+	padding:0px 30px 30px 30px;
+	position:relative;
+	width:100%;
+}
+.login-separate-border{
+	border-bottom:solid 1px #ced4d8;
+	margin-top:30px;
+}
+.logo-wrapper{
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	justify-content: space-between;
+	align-items:center;
+	padding:15px;
+	background:#eff3f6;
+	width:100%;
+}
+.footer-wrapper{
+	padding:0px 30px 30px 30px;
+	width:100%;
+	background:#ffffff;
+}
+@media (min-width:768px){
+.right-wrapper-bg{background: #eff3f6;}	
+.login-right-wrapper .container-padding{
+	padding:30px;
+	position:relative;
+	width:100%;
+}	
+a.video-poster-play .poster-width{max-height:243px;}	
+.login-left-wrapper .container-padding,
+.login-left-wrapper1 .container-padding{
+	border:none;
+}	
+.logo-wrapper{
+	padding:30px 30px 0px 30px;
+	background:#ffffff;
+}
+.login-left-wrapper{
+	min-height:calc(100vh - 116px);
+	height:calc(100% - 116px);
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	-ms-flex-wrap: wrap!important;
+	flex-wrap: wrap!important;
+	-ms-flex-line-pack: center!important;
+	align-content: center!important;
+}
+.login-left-wrapper1{
+	min-height:calc(100vh - 66px);
+	height:calc(100% - 66px);
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	-ms-flex-wrap: wrap!important;
+	flex-wrap: wrap!important;
+	-ms-flex-line-pack: center!important;
+	align-content: center!important;
+}
+.login-right-wrapper{
+	background:#eff3f6;
+	min-height: 100vh;
+	height: 100%;
+	display: -webkit-box!important;
+	display: -ms-flexbox!important;
+	display: flex!important;
+	-ms-flex-wrap: wrap!important;
+	flex-wrap: wrap!important;
+	-ms-flex-line-pack: center!important;
+	align-content: center!important;
+}
+.login-left-wrapper .container-padding{
+	padding:30px;
+
+}
+}
+@media (min-width:992px){
+.login-right-wrapper .container-padding,
+.login-left-wrapper .container-padding,
+.login-left-wrapper1 .container-padding{
+	padding:30px 60px;
+}
+}
+@media (min-width:1200px){
+.login-right-wrapper .container-padding{
+	padding:30px 70px;
+}	
+.login-left-wrapper .container-padding,
+.login-left-wrapper1 .container-padding{
+	padding:30px 186px;
+}		
+}
+ul.sell-more-listing {margin:0px; padding:0px;}
+ul.sell-more-listing li {
+    list-style: none;
+    background: url(../../../images/login/step-tick-m.png) no-repeat;
+    background-position: 0 0px;
+    padding:0px 0 10px 39px;
+	min-height:24px;
+	line-height:160%;
+	color:#34303f;
+}
+@media (min-width:768px){
+ul.sell-more-listing li {
+    background: url(../../../images/login/step-tick.png) no-repeat;
+    background-position: 0 0px;
+    padding:0px 0 15px 47px;
+	min-height:25px;
+}
+}
+ul.sell-more-listing li:last-child{padding-bottom:0px;}
+.down-comma-clr{color:#d7dfe4;}
+
+/* Testimonials Slider */
+.signup-testimonials .carousel-item{
+	background:#f6f8f9;
+	padding:20px;
+	border-radius:5px;
+}
+.signup-testimonials .testimonials-pic{
+	max-height:60px;
+}
+.signup-testimonials .testimonials-description{
+	font-size:14px;
+	color:#7f7c88;
+	line-height:160%;
+}
+.signup-testimonials .testimonials-name
+{
+	font-size:15px;
+	color:#34303f;
+	font-weight:500;
+	margin-top:10px;	
+}
+.signup-testimonials .testimonials-name span{
+	font-size:14px;
+	color:#7f7c88;
+	font-weight:300;	
+}
+@media (min-width:992px){
+.signup-testimonials .carousel-item{
+	padding:30px;
+	min-height:176px;
+}	
+.signup-testimonials .testimonials-pic{
+	max-height:86px;
+}
+}
+.signup-testimonials .carousel-indicators {
+    position: relative;
+	bottom: auto;
+}
+.signup-testimonials ol.carousel-indicators{margin-bottom:0px;}
+.signup-testimonials .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+	border-radius:100%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color:#d7dfe4;
+}
+.signup-testimonials .carousel-indicators .active {
+    background-color: #5c6ac4;
+}
+/* Help Video Modal Preview css*/
+.help-video-modal {
+    width: 95%;
+    max-width: 100%;
+}
+a.bg-transparent, .bg-transparent {
+    background: transparent;
+}
+a.help-video-cross-icon {
+    border-radius: 50%;
+    background: #34303f;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    padding: 8px;
+    z-index: 99;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 9px;
+    opacity: 1;
+    display: inline-block;
+}
+@media (min-width: 992px){
+	.help-video-modal {
+		width: 850px;
+		max-width: 100%;
+	}	
+	a.help-video-cross-icon {
+		right: -26px;
+		padding: 8px;
+		top: -15px;
+		bottom: auto;
+	}
+}
+.help-modal-border {
+    border: solid 1px #7f7c88;
+}
+
+
+
+
+

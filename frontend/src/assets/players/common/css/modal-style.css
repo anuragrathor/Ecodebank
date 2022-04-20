@@ -1,0 +1,171 @@
+/*-- Password Protected Modal Pop-up --*/
+.password-protected-modal{
+	width: 90%; 
+	max-width: 300px;
+}
+.password-protected-modal .modal-body{padding: 15px;}
+.password-protected-modal .custom-modal-foooter{
+	padding: 15px;
+	border-top: solid 1px #ced4d8;
+}
+.password-modal-heading{
+	color: #34303f;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	display: none;
+}
+.password-modal-title{
+	color: #7f7c88;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 15px;
+	display: none;
+}
+.password-protected-modal label{
+	color: #7f7c88;
+	font-size: 12px;
+	font-weight: 400;
+}
+.password-protected-modal .form-control{
+    height: 35px;
+    border: 1px solid #ced4d8;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #34303f;
+    padding: 6px 10px;
+    outline: none;
+    line-height: normal;
+    font-size: 12px;
+}
+.password-protected-modal .form-control:focus{
+    border: 1px solid #39295d;
+    outline: none;
+    box-shadow: none !important;
+}
+.password-protected-modal a.base-btn,
+.password-protected-modal .base-btn,
+.password-protected-modal a.base-btn:focus, 
+.password-protected-modal .base-btn:focus{
+    padding: 7px 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    background: #ffffff;
+    border: solid 1px transparent;
+    outline: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    line-height: normal;
+    outline: none;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+/* Default Button BGcolor */
+.password-protected-modal .default-btn,
+.password-protected-modal a.default-btn{
+	color: #7f7c88; 
+	background-color: #ffffff;
+	border-color: #ced4d8;
+ }
+.password-protected-modal .default-btn:hover,
+.password-protected-modal a.default-btn:hover,
+.password-protected-modal .default-btn:focus,
+.password-protected-modal a.default-btn:focus{
+	background-color: #ffffff; 
+	color: #34303f; 
+	border-color: #cacfd2;
+	box-shadow: none; 
+	outline: none;
+ }
+
+/* Strong Blue Button  BGcolor */
+.password-protected-modal .blue-btn,
+.password-protected-modal a.blue-btn{
+	color: #ffffff !important;
+	background-color: #39295d; 
+	border-color: #39295d;
+}
+.password-protected-modal .blue-btn:hover,
+.password-protected-modal a.blue-btn:hover,
+.password-protected-modal .blue-btn:focus,
+.password-protected-modal a.blue-btn:focus{
+	background-color: #513c80; 
+	color: #ffffff; 
+	border-color: #513c80;
+	box-shadow: none; 
+	outline: none;
+}
+.password-protected-modal .mr5{margin-right: 5px !important;}
+
+/* Error Message */
+.password-protected-modal .error-message input[type="password"],
+.password-protected-modal .error-message input[type="text"]{
+	border: 1px solid #ff2332;
+	position: relative;
+}
+.password-protected-modal .error-message .form-control{
+	content: "";
+	top: 0px;
+	right: 0px;
+	background: url(../images/error-danger.png) no-repeat top right;
+	position: absolute;
+	z-index: 9;
+}
+.password-protected-modal  small.error-text{color: #ff2332; display: block;font-size: 12px; margin-top: 5px;}
+@media (min-width: 768px) {
+.password-protected-modal{
+	width: 500px; 
+	max-width: 100%;
+}
+.password-modal-heading{
+	display: block;
+}
+.password-modal-title{
+	display: block;
+}
+.password-protected-modal .form-control{
+	height: 40px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.password-protected-modal label{
+	font-size: 14px;
+}
+.password-protected-modal .modal-body{padding: 30px;}
+.password-protected-modal .custom-modal-foooter{padding: 30px;}
+.password-modal-title{margin-bottom: 30px;}
+.password-protected-modal a.base-btn, 
+.password-protected-modal .base-btn, 
+.password-protected-modal a.base-btn:focus, 
+.password-protected-modal .base-btn:focus {
+	font-size: 14px;
+	padding: 10px 20px;
+}
+.password-protected-modal  small.error-text {font-size: 14px;}
+}
+.form-control-icon-right {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 1px;
+    border-left: hidden;
+    border-radius: 0;
+    z-index: 9;
+}
+.relative{position: relative;}
+.form-control-icon-right .addon-icon,
+.form-control-icon-right .addon-icon:hover,
+.form-control-icon-right .addon-icon:focus
+{color: #7f7c88; background-color: transparent; height: 87%; border: none; border-left: solid 1px #ced4d8; border-top-left-radius: 0px; border-bottom-left-radius: 0px; box-shadow: none; outline: none; line-height: 100%;}
+.f-16{font-size: 16px;}
