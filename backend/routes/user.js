@@ -2,6 +2,10 @@ const router = require("express").Router();
 const User = require("../models/User");
 const {verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin} = require("../middlewares/verifyToken");
 
+router.get('/', (req, res, next)=>{
+    res.json({message : "Hello from User"});
+})
+
 router.post("/add", (req, res) =>{
     const username = req.body.username;
     res.send("user test is successful"+username);

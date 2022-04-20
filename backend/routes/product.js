@@ -4,6 +4,12 @@ const {verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin} = require(
 const multer  = require('multer');
 const upload = multer({ dest: 'assets/images/uploads/' });
 
+
+router.get('/', (req, res, next)=>{
+    res.json({message : "Hello from Product"});
+})
+
+
 //Product Image video file Upload
 router.post('/profile', upload.single('filename'), function (req, res, next) {
     // req.file is the `filename` file

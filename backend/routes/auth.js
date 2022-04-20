@@ -3,6 +3,12 @@ const User = require("../models/User");
 const CryptoJS = require('crypto-js');
 const jwt = require('jsonwebtoken');
 
+
+router.get('/', (req, res, next)=>{
+    res.json({message : "Hello from Auth"});
+})
+
+
 //Register
 router.post("/register", async (req, res) =>{
 
@@ -23,7 +29,6 @@ router.post("/register", async (req, res) =>{
 
 
 //Login
-
 router.post("/login", async (req,res)=>{
 
     try{

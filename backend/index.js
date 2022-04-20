@@ -6,7 +6,7 @@ dotenv.config();
 const AdminRoute = require("./routes/AdminRoute");
 const VandorRoute = require("./routes/VandorRoute");
 const userRoute = require("./routes/user");
-const authRoute = require("./routes/auth");
+const AuthRoute = require("./routes/auth");
 const productRoute = require("./routes/product");
 const mailRoute = require("./routes/mailSend");
 
@@ -25,10 +25,10 @@ mongoose.connect(
  
  app.use('/admin', AdminRoute);
  app.use('/vandor', VandorRoute); 
- app.use("/api/auth", authRoute);
- app.use("/api/users", userRoute);
- app.use("/api/products", productRoute);
- app.use("/api/sendmail", mailRoute);
+ app.use("/auth", AuthRoute);
+ app.use("/user", userRoute);
+ app.use("/product", productRoute);
+ app.use("/sendmail", mailRoute);
 
 
 

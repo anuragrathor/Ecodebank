@@ -4,6 +4,10 @@ const router = require("express").Router();
 const nodemailer = require("nodemailer");
 
 
+router.get('/', (req, res, next)=>{
+    res.json({message : "Hello from Mail"});
+})
+
 router.post("/", async (req, res) =>{
 
         // Generate test SMTP service account from ethereal.email
