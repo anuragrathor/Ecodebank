@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoaderServiceService } from 'src/app/appServices/loader/loader-service.service';
+import { ToasterServiceService } from 'src/app/appServices/toaster/toaster-service.service';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toaster: ToasterServiceService, private loader : LoaderServiceService) {
+    this.toaster.showSuccess('Login successfylly');
+    this.loader.loaderToggle(true);
+   }
 
   ngOnInit(): void {
+    this.loader.loaderToggle(false);
   }
 
 }
