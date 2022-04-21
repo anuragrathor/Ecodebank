@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoaderServiceService } from 'src/app/appServices/loader/loader-service.service';
 import { ToasterServiceService } from 'src/app/appServices/toaster/toaster-service.service';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,7 +11,7 @@ import { ToasterServiceService } from 'src/app/appServices/toaster/toaster-servi
 export class LoginComponent implements OnInit {
 
   constructor(private toaster: ToasterServiceService, private loader : LoaderServiceService) {
-    this.toaster.showSuccess('Login successfylly');
+    this.toaster.showSuccess('Login successfully');
     this.loader.loaderToggle(true);
    }
 
