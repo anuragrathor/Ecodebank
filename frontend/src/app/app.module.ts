@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';   //Toaster Module
 import { ToastrModule } from 'ngx-toastr';                                        // Toaster Module
 import { NgxUiLoaderModule } from "ngx-ui-loader";                                //Loader Module
+import { FormBuilder,FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { CustomerModule } from './customer/customer.module';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule, // required animations module
     //ToastrModule.forRoot(), // Normal ToastrModule added
     ToastrModule.forRoot({
@@ -29,7 +32,7 @@ import { CustomerModule } from './customer/customer.module';
     AppRoutingModule,
     CustomerModule
   ],
-  providers: [],
+  providers: [FormBuilder],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
