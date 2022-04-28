@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Team Data</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>&nbsp;</th>
+            <th colspan="2">Match : {{other.match}}</th>
+            <th colspan="2">Contest : {{other.contest}}</th>
+            <th colspan="2">Entry Fee: {{other.entry_fee}}</th>
+            <th colspan="2">Size: {{other.total_teams}}</th>
+            <th colspan="2">Invite Code: {{other.invite_code}}</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <th>User (Team)</th>
+            <th>Player 1 (Captain)</th>
+            <th>Player 2 (Vice Captain)</th>
+            <th>Player 3 </th>
+            <th>Player 4 </th>
+            <th>Player 5 </th>
+            <th>Player 6 </th>
+            <th>Player 7 </th>
+            <th>Player 8 </th>
+            <th>Player 9 </th>
+            <th>Player 10 </th>
+            <th>Player 11 </th>
+        </tr>
+        {{#each teams}}
+        <tr>
+            <td>{{this.team}}</td>
+            <td>{{this.player1}}</td>
+            <td>{{this.player2}}</td>
+            <td>{{this.player3}}</td>
+            <td>{{this.player4}}</td>
+            <td>{{this.player5}}</td>
+            <td>{{this.player6}}</td>
+            <td>{{this.player7}}</td>
+            <td>{{this.player8}}</td>
+            <td>{{this.player9}}</td>
+            <td>{{this.player10}}</td>
+            <td>{{this.player11}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+
+</html>

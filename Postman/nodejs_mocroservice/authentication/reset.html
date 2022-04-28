@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reset Password</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-12 col-md-4">
+            <div class="card shadow border-0">
+                <div class="card-body">
+                    <h5 class="card-title">Reset password</h5>
+                    <form action="/auth/reset-password" id="resetForm" method="post">
+                        <input id="email" name="email" type="hidden">
+                        <input id="token" name="token" type="hidden">
+                        <div class="mb-3">
+                            <label class="form-label" for="password">New Password:</label>
+                            <input class="form-control" id="password" name="password" required type="password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="password_confirmation">Confirm Password:</label>
+                            <input class="form-control" id="password_confirmation" name="password_confirmation"
+                                   required type="password">
+                        </div>
+                        <button class="btn btn-primary w-100" type="submit">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let q = (new URL(document.location.href)).searchParams;
+    document.getElementById('email').value = q.get('email');
+    document.getElementById('token').value = q.get('token');
+
+</script>
+<script>
+    $(document).ready(function () {
+        $("#resetForm").submit(function (event) {
+            event.preventDefault();
+            var $form = $(this),
+                url = $form.attr('action');
+
+            const email = $('#email').val();
+            const token = $('#token').val();
+            const password = $('#password').val();
+            const password_confirmation = $('#password_confirmation').val();
+
+            if (password !== password_confirmation) {
+                alert('Password does not match.')
+            } else {
+
+                var posting = $.post(url, {
+                    email,
+                    token,
+                    password,
+                    password_confirmation
+                });
+
+                /* Alerts the results */
+                posting.done(function (data) {
+                    alert(data.message)
+
+                    if (data.status) {
+                        $(this).reset();
+                    }
+
+                });
+                posting.fail(function () {
+                    alert('Failed To Reset Password')
+                });
+            }
+        });
+    })
+</script>
+</body>
+
+</html>
